@@ -2,7 +2,11 @@
 #variable, pregunte al usuario por la contraseña e imprima por pantalla si la
 #contraseña introducida por el usuario coincide con la guardada en la variable
 #sin tener en cuenta mayúsculas y minúsculas
-palabra = "python"
+contra = input("Escribe tu contraseña: ")
+contra_nueva = input("Confirmar contraseña: ")
+if contra == contra_nueva:
+    print("Contraseña correcta")
+elif contra != contra_nueva:
+    print("No son iguales")
 
-for i in range(len(palabra)):
-    print(i)
+     
