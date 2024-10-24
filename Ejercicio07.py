@@ -2,5 +2,7 @@
 #pantalla un triángulo rectángulo como el de más abajo, de altura el número 
 #introducido.
 num = int(input("dame un numero entero: "))
-for i in range(1, num + 1):
-    print(i)
+for i in range(num):
+    for x in range(i+1):
+        print("*", end="")
+    print("")
